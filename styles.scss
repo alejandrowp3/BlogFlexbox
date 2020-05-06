@@ -1,0 +1,112 @@
+body {
+    margin: 0px;
+    padding-left: 0px;
+    font-family: "Raleway", sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #667292;
+
+    &-logo {
+        display: flex;
+        max-height: 3em;
+        width: 100%;
+        margin-left: 1em;
+    }
+
+    &-nav {
+        display: flex;
+
+        a {
+            display: flex;
+            align-items: center;
+            padding: 0 2em;
+            text-decoration: none;
+            color: #daebe8;
+            height: 3em;
+
+            &:hover {
+                background-color: #8d9db6;
+            }
+        }
+    }
+}
+
+.container {
+    display: flex;
+}
+
+.articles-navigation {
+    background-color: #87bdd8;
+    min-width: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 3em);
+
+    a {
+        display: flex;
+        text-decoration: none;
+        padding: 1em;
+        color: #daebe8;
+        min-width: 15vw;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            background-color: #b7d7e8;
+        }
+    }
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 3em);
+    background-color: #cfe0e8;
+    width: 70vw;
+
+    article {
+        display: flex;
+        padding: 2em;
+
+        picture {
+            margin-right: 1em;
+        }
+
+        &-content {
+            padding: 1em;
+            display: flex;
+            text-align: justify;
+            flex-direction: column;
+        }
+    }
+}
+
+.aside {
+    display: flex;
+    width: 15vw;
+    background-color: #bccad6;
+    padding: 1em 0.5em 1em 0.5em;
+    align-items: center;
+    flex-direction: column;
+
+    .destacado {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #daebe8;
+    height: 3em;
+    background-color: #667292;
+    font-weight: 300;
+
+}
